@@ -1,0 +1,274 @@
+.mt-element-ribbon {
+    position: absolute;
+    margin-top: 5px;
+}
+
+.mt-element-ribbon .ribbon-content {
+    margin: 0;
+    padding: 25px;
+    clear: both;
+}
+
+.mt-element-ribbon .ribbon-content.no-padding {
+    padding-top: 0;
+}
+
+.mt-element-ribbon .ribbon {
+    padding: 0.5em 1em;
+    z-index: 5;
+    float: left;
+    margin: 10px 0 0 -2px;
+    clear: left;
+    position: relative;
+    background-color: #bac3d0;
+    color: #384353;
+}
+
+.mt-element-ribbon .ribbon.ribbon-right {
+    float: right;
+    clear: right;
+    margin: 10px -2px 0 0;
+}
+
+.mt-element-ribbon .ribbon.ribbon-vertical-left {
+    clear: none;
+    margin: -2px 0 0 10px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 41px;
+    text-align: center;
+}
+
+.mt-element-ribbon .ribbon.ribbon-vertical-right {
+    clear: none;
+    float: right;
+    margin: -2px 10px 0 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 41px;
+    text-align: center;
+}
+
+.mt-element-ribbon .ribbon.ribbon-shadow {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+.mt-element-ribbon .ribbon.ribbon-shadow.ribbon-right, .mt-element-ribbon .ribbon.ribbon-shadow.ribbon-vertical-right {
+    box-shadow: -2px 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+.mt-element-ribbon .ribbon.ribbon-round {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+
+.mt-element-ribbon .ribbon.ribbon-round.ribbon-right {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+.mt-element-ribbon .ribbon.ribbon-round.ribbon-vertical-right, .mt-element-ribbon .ribbon.ribbon-round.ribbon-vertical-left {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 5px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+.mt-element-ribbon .ribbon.ribbon-border:after {
+    border: 1px solid;
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.mt-element-ribbon .ribbon.ribbon-border-vert:after {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+}
+
+.mt-element-ribbon .ribbon.ribbon-border-hor:after {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+
+.mt-element-ribbon .ribbon.ribbon-border-dash:after {
+    border: 1px solid;
+    border-style: dashed;
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+}
+
+.mt-element-ribbon .ribbon.ribbon-border-dash-vert:after {
+    border-top: none;
+    border-bottom: none;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+}
+
+.mt-element-ribbon .ribbon.ribbon-border-dash-hor:after {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    content: '';
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+
+.mt-element-ribbon .ribbon.ribbon-clip {
+    left: -10px;
+    margin-left: 0;
+}
+
+.mt-element-ribbon .ribbon.ribbon-clip.ribbon-right {
+    left: auto;
+    right: -10px;
+    margin-right: 0;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub {
+    z-index: -1;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip:before, .mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent !important;
+    bottom: -10px;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip:before {
+    border-width: 0 10px 10px 0;
+    border-right-color: #222 !important;
+    left: 0;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip.ribbon-right:before, .mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip.ribbon-right:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+    bottom: -10px;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip.ribbon-right:before {
+    border-right-color: transparent !important;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub.ribbon-clip.ribbon-right:after {
+    border-width: 0 0 10px 10px;
+    border-left-color: #222 !important;
+    right: 0;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub.ribbon-bookmark:after {
+    border-left: 21px solid;
+    border-right: 20px solid;
+    border-bottom: 1em solid transparent !important;
+    bottom: -1em;
+    content: '';
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.mt-element-ribbon .ribbon:after {
+    border-color: #62748f;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub {
+    background-color: #bac3d0;
+    color: #384353;
+}
+
+.mt-element-ribbon .ribbon > .ribbon-sub:after {
+    border-color: #62748f;
+    border-left-color: #bac3d0;
+    border-right-color: #bac3d0;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-default {
+    background-color: #FF6501;
+    color: #fff;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-default:after {
+    border-color: #fff;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-default > .ribbon-sub {
+    background-color: #FF6501;
+    color: #fff;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-default > .ribbon-sub:after {
+    border-color: #FF6501;
+    border-left-color: #bac3d0;
+    border-right-color: #bac3d0;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-primary {
+    background-color: #00A7C3;
+    color: #fff;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-primary:after {
+    border-color: #fff;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-primary > .ribbon-sub {
+    background-color: #00A7C3;
+    color: black;
+}
+
+.mt-element-ribbon .ribbon.ribbon-color-primary > .ribbon-sub:after {
+    border-color: #00A7C3;
+    border-left-color: #337ab7;
+    border-right-color: #337ab7;
+}

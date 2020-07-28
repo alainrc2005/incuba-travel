@@ -1,0 +1,34 @@
+<root>
+    <output path="assets\js\incubatravel.min.js">
+        <input path="assets\js\jquery.js"/>
+        <input path="assets\js\bootstrap.js"/>
+        <input path="assets\js\nivo.slider.js"/>
+        <input path="assets\js\knockout-3.4.2.js"/>
+        <input path="assets\js\knockout.validation.js"/>
+        <input path="assets\js\toastr.js"/>
+        <input path="assets\js\slimscroll.js"/>
+        <input path="assets\js\datepicker.js"/>
+        <input path="assets\js\datepicker_es.js"/>
+        <input path="assets\js\datetimepicker.js"/>
+        <input path="assets\js\datetimepicker_es.js"/>
+        <input path="assets\js\moment.js"/>
+        <input path="assets\js\thumbnail-slider.js"/>
+        <input path="assets\js\mixitup.js"/>
+        <input path="assets\js\app.js"/>
+    </output>
+
+    <output path="assets\css\incubatravel.min.css">
+        <input path="assets\css\animate.css"/>
+        <input path="assets\css\bootstrap.css"/>
+        <input path="assets\css\ionicons.css"/>
+        <input path="assets\css\imagehover.css"/>
+        <input path="assets\css\nivo.slider.css"/>
+        <input path="assets\css\nivo.theme.css"/>
+        <input path="assets\css\toastr.css"/>
+        <input path="assets\css\datepicker.css"/>
+        <input path="assets\css\datetimepicker.css"/>
+        <input path="assets\css\ribbon.css"/>
+        <input path="assets\css\thumbnail-slider.css"/>
+        <input path="assets\css\custom.css"/>
+    </output>
+</root>

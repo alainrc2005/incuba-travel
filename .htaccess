@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+    Options +FollowSymLinks
+    RewriteEngine on
+
+    # Send request via home.php
+    RewriteCond $1 !^(index\.php|robots\.txt|sitemap\.xml|assets)
+    RewriteRule ^(.*)$ index.php/$1 [L]
+
+</IfModule>
